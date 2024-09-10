@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.622" height="47.735" viewBox="0 0 32.622 47.735">
+  <g id="SVGRepo_iconCarrier" transform="translate(1.5 1.5)">
+    <path id="Path_270" data-name="Path 270" d="M61.811,68.235a1.5,1.5,0,0,1-1.5-1.5V57.89a16.307,16.307,0,0,1-7.964-29.52l-3.313-5.607a1.5,1.5,0,0,1,2.583-1.526l3.321,5.62a16.3,16.3,0,0,1,13.748,0l3.321-5.62a1.5,1.5,0,0,1,2.583,1.526L71.275,28.37a16.307,16.307,0,0,1-7.964,29.52v8.845A1.5,1.5,0,0,1,61.811,68.235Zm0-39.9A13.311,13.311,0,1,0,75.122,41.647,13.326,13.326,0,0,0,61.811,28.336Z" transform="translate(-47 -22)" fill="#cdcdcd"/>
+    <ellipse id="Ellipse_99" data-name="Ellipse 99" cx="2.762" cy="2.301" rx="2.762" ry="2.301" transform="translate(4.78 15.77)" fill="#cdcdcd"/>
+    <path id="Ellipse_99_-_Outline" data-name="Ellipse 99 - Outline" d="M2.762-.5A3.062,3.062,0,0,1,6.024,2.3,3.062,3.062,0,0,1,2.762,5.1,3.062,3.062,0,0,1-.5,2.3,3.062,3.062,0,0,1,2.762-.5Zm0,4.6A2.074,2.074,0,0,0,5.024,2.3,2.074,2.074,0,0,0,2.762.5,2.074,2.074,0,0,0,.5,2.3,2.074,2.074,0,0,0,2.762,4.1Z" transform="translate(4.78 15.77)" fill="#cdcdcd"/>
+    <circle id="Ellipse_100" data-name="Ellipse 100" cx="2.301" cy="2.301" r="2.301" transform="translate(19.509 15.77)" fill="#cdcdcd"/>
+    <path id="Ellipse_100_-_Outline" data-name="Ellipse 100 - Outline" d="M2.3-.5A2.8,2.8,0,1,1-.5,2.3,2.8,2.8,0,0,1,2.3-.5Zm0,4.6A1.8,1.8,0,1,0,.5,2.3,1.8,1.8,0,0,0,2.3,4.1Z" transform="translate(19.509 15.77)" fill="#cdcdcd"/>
+  </g>
+</svg>
