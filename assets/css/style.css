@@ -237,6 +237,12 @@ body.modal-open .mm-slideout {
   right: 0;
   display: none;
 }
+.custom_header .header_content h6 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
 .custom_header .header_content h5 {
   font-size: 6rem;
   font-weight: 800;
@@ -825,6 +831,168 @@ body.modal-open .mm-slideout {
 .our_partners {
   background-color: #00142c;
   padding-bottom: 120px;
+}
+
+.news_letter {
+  background-color: #00142c;
+  padding-bottom: 240px;
+}
+.news_letter .section_header {
+  text-align: center;
+}
+.news_letter p {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  margin: 30px 0;
+}
+.news_letter .form-control {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.service_details_breadcrumb {
+  height: 60vh;
+  background-color: #00142c;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.service_details_breadcrumb h5 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.service_details_breadcrumb p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.services_summery {
+  background-color: #011936;
+  padding: 60px 0;
+}
+.services_summery .section_header {
+  margin-bottom: 30px;
+}
+.services_summery p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+.services_methodology {
+  background-color: #00142c;
+  padding: 100px 0;
+  padding-bottom: 250px;
+}
+.services_methodology .section_header {
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.methodogy_card {
+  margin-bottom: 37px;
+}
+.methodogy_card .methodogy_card_cotnent {
+  background-color: #011936;
+  padding: 87px 64px;
+}
+.methodogy_card .methodogy_card_cotnent h5 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+.methodogy_card .methodogy_card_cotnent p {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 1rem;
+  line-height: 25px;
+}
+.methodogy_card .methodogy_card_img {
+  text-align: center;
+}
+.methodogy_card .methodogy_card_img img {
+  width: 50%;
+  margin: auto;
+}
+
+.pricing_cards {
+  background-color: #00142c;
+  padding-bottom: 150px;
+}
+
+.pricing_card {
+  width: 95%;
+  margin: auto;
+}
+.pricing_card .pricing_head {
+  background-color: #011936;
+  padding: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pricing_card .pricing_head h5 {
+  color: #0ec9ac;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pricing_card .pricing_head p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+}
+.pricing_card .pricing_body {
+  background-color: #011936;
+  padding: 28px 45px;
+}
+.pricing_card .pricing_body p, .pricing_card .pricing_body a {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.pricing_card .pricing_body a.lets_talk {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin-top: 78px;
+}
+.pricing_card .pricing_body a.lets_talk::after {
+  position: absolute;
+  bottom: 10px;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #fff;
+  left: 0;
+}
+.pricing_card .pricing_body ul {
+  margin-top: 50px;
+}
+.pricing_card .pricing_body ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.pricing_card .pricing_body ul li span {
+  color: #fff;
+  display: inline-flex;
+  margin-left: 20px;
+}
+.pricing_card .pricing_body .custom_btn {
+  margin-top: 80px;
+}
+.pricing_card .pricing_body .custom_btn:hover {
+  color: #0ec9ac;
 }
 
 @media (max-width: 1800px) {
