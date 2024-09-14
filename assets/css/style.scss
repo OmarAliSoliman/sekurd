@@ -73,6 +73,15 @@ p {
   color: #000;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: $mainColor;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $secondColor;
+}
+
 /* Main Style */
 
 .btn_style {
@@ -170,8 +179,10 @@ body.modal-open .mm-slideout {
   top: 0;
   width: 100%;
   top: 0;
-  padding: 50px 0;
+  padding: 30px 0;
   z-index: 99;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   .links {
     li {
       margin-left: 30px;
@@ -249,20 +260,26 @@ body.modal-open .mm-slideout {
     }
     .half_circles {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      display: none;
+      bottom: -330px;
+      right: -150px;
+      // display: none;
       img {
         // width: 50%;
+        width: 250px;
+      }
+      .half_circles_2 {
+        margin-top: 250px;
+        margin-left: 20px;
       }
     }
-    h6{
+    h6 {
       color: #fff;
       font-weight: bold;
       font-size: 1.4rem;
       margin: 10px 0;
     }
-    h5 {
+    h5,
+    span {
       font-size: 6rem;
       font-weight: 800;
       color: #fff;
@@ -277,15 +294,18 @@ body.modal-open .mm-slideout {
       margin-right: 90px;
     }
     .typed {
-      display: flex;
+      display: inline-flex;
       // justify-content: center;
       margin-left: 100px;
+      height: 85px;
+      // border: 1px solid #fff;
       color: $secondColor;
     }
     p {
       color: #fff;
       font-size: 1.2rem;
       width: 850px;
+      max-width: 100%;
       margin: 14px 0 39px 0;
       z-index: 4;
       position: relative;
@@ -295,11 +315,52 @@ body.modal-open .mm-slideout {
       position: relative;
     }
   }
+  .scroll_down {
+    width: 17px;
+    height: 27px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 30px;
+    z-index: 8;
+    .point {
+      width: 4px;
+      height: 7px;
+      position: absolute;
+      display: block;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: 0px;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      animation: move 1.3s linear infinite;
+    }
+  }
+  .typed-cursor {
+    color: $secondColor !important;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 4px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 15px);
+    opacity: 0;
+  }
 }
 
 .custom_about_header {
   position: relative;
-  .header_img{
+  .header_img {
     position: absolute;
     top: 0;
     right: 0;
@@ -312,6 +373,10 @@ body.modal-open .mm-slideout {
       width: 100%;
     }
   }
+}
+
+.custom_contact_header {
+  min-height: 90vh;
 }
 
 .section_header {
@@ -442,7 +507,7 @@ body.modal-open .mm-slideout {
   }
 }
 
-.custom_facts_header{
+.custom_facts_header {
   background-image: unset;
 }
 
@@ -501,6 +566,7 @@ body.modal-open .mm-slideout {
   min-height: 465px;
   position: relative;
   z-index: 3;
+  margin-bottom: 15px;
   .card_icon {
     margin-bottom: 35px;
   }
@@ -538,6 +604,9 @@ body.modal-open .mm-slideout {
       margin-bottom: 40px;
     }
     .slider_item {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
       .card_icon {
         // border: 1px solid #fff;
         width: 135px;
@@ -738,6 +807,7 @@ body.modal-open .mm-slideout {
   background-color: $mainColor;
   padding: 120px 0 44px 0;
   box-shadow: 0 0 99px rgba(#0ec9ac, 0.26);
+  overflow: hidden;
   .footer_logo {
     position: relative;
     padding-right: 20px;
@@ -849,27 +919,26 @@ body.modal-open .mm-slideout {
   }
 }
 
-
-.about_team_certificate{
-  .certificate_proffesional{
+.about_team_certificate {
+  .certificate_proffesional {
     background-color: transparent;
   }
 }
 
-.acwnologe_by{
+.acwnologe_by {
   background-color: #011936;
   padding: 83px 0;
-  .section_header{
+  .section_header {
     margin-bottom: 40px;
   }
-  .acwnologe_by_slider{
-    .card_icon{
+  .acwnologe_by_slider {
+    .card_icon {
       height: 100px;
       // border: 1px solid #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      img{
+      img {
         width: 150px;
       }
     }
@@ -908,55 +977,55 @@ body.modal-open .mm-slideout {
   }
 }
 
-.our_partners{
+.our_partners {
   background-color: $mainColor;
   padding-bottom: 120px;
 }
 
-.news_letter{
+.news_letter {
   background-color: $mainColor;
   padding-bottom: 240px;
-  .section_header{
+  .section_header {
     text-align: center;
   }
-  p{
+  p {
     text-align: center;
     margin: 0;
     color: #fff;
     margin: 30px 0;
   }
-  .form-control{
+  .form-control {
     background-color: #fff;
     border-radius: 25px;
   }
 }
 
-.service_details_breadcrumb{
+.service_details_breadcrumb {
   height: 60vh;
   background-color: $mainColor;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  h5{
+  h5 {
     color: #fff;
     font-size: 3rem;
     margin-bottom: 30px;
     text-transform: uppercase;
   }
-  p{
+  p {
     color: #fff;
     font-size: 1rem;
   }
 }
 
-.services_summery{
+.services_summery {
   background-color: #011936;
   padding: 60px 0;
-  .section_header{
+  .section_header {
     margin-bottom: 30px;
   }
-  p{
+  p {
     color: #fff;
     font-size: 1rem;
     margin-bottom: 15px;
@@ -964,34 +1033,34 @@ body.modal-open .mm-slideout {
   }
 }
 
-.services_methodology{
+.services_methodology {
   background-color: $mainColor;
   padding: 100px 0;
   padding-bottom: 250px;
-  .section_header{
+  .section_header {
     text-align: center;
     margin-bottom: 95px;
   }
 }
-.methodogy_card{
+.methodogy_card {
   margin-bottom: 37px;
-  .methodogy_card_cotnent{
+  .methodogy_card_cotnent {
     background-color: #011936;
     padding: 87px 64px;
-    h5{
+    h5 {
       font-size: 2.4rem;
       color: #fff;
     }
-    p{
+    p {
       color: #fff;
       margin-top: 15px;
       font-size: 1rem;
       line-height: 25px;
     }
   }
-  .methodogy_card_img{
+  .methodogy_card_img {
     text-align: center;
-    img{
+    img {
       width: 50%;
       margin: auto;
     }
@@ -999,41 +1068,43 @@ body.modal-open .mm-slideout {
 }
 
 // =============================================================
-.pricing_cards{
+.pricing_cards {
   background-color: $mainColor;
   padding-bottom: 150px;
 }
-.pricing_card{
+.pricing_card {
   width: 95%;
   margin: auto;
+  margin-bottom: 30px;
   // max-width: 100%;
-  .pricing_head{
+  .pricing_head {
     background-color: #011936;
     padding: 28px;
     text-align: center;
     margin-bottom: 20px;
-    h5{
+    h5 {
       color: $secondColor;
       font-size: 5rem;
       font-weight: bold;
       text-transform: uppercase;
       margin: 0;
     }
-    p{
+    p {
       font-size: 1rem;
       color: #fff;
       margin: 0;
     }
   }
-  .pricing_body{
+  .pricing_body {
     background-color: #011936;
     padding: 28px 45px;
-    p,a{
+    p,
+    a {
       text-align: center;
       color: #fff;
       font-size: 1rem;
     }
-    a.lets_talk{
+    a.lets_talk {
       display: block;
       width: fit-content;
       margin: auto;
@@ -1042,7 +1113,7 @@ body.modal-open .mm-slideout {
       font-weight: bold;
       position: relative;
       margin-top: 78px;
-      &::after{
+      &::after {
         position: absolute;
         bottom: 10px;
         height: 3px;
@@ -1052,32 +1123,453 @@ body.modal-open .mm-slideout {
         left: 0;
       }
     }
-    ul{
+    ul {
       margin-top: 50px;
-      li{
+      li {
         display: flex;
         align-items: center;
         margin-bottom: 15px;
-        span{
+        span {
           color: #fff;
           display: inline-flex;
           margin-left: 20px;
         }
       }
     }
-    .custom_btn{
+    .custom_btn {
       margin-top: 80px;
-      &:hover{
+      &:hover {
         color: $secondColor;
       }
     }
   }
+}
 
+.card-light {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-light:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: -o-radial-gradient(
+    calc(var(--ratio-x) * 100%) calc(var(--ratio-y) * 100%),
+    circle,
+    #81a2fc1e,
+    transparent 50%
+  );
+  background: radial-gradient(
+    circle at calc(var(--ratio-x) * 100%) calc(var(--ratio-y) * 100%),
+    #81a2fc1e,
+    transparent 50%
+  );
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+// =============================================================
+.contact_us_page {
+  padding: 120px 0;
+  padding-bottom: 150px;
+  background-color: $mainColor;
+  padding-top: 40px;
+  .contact_us_content {
+    h5 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 52px;
+    }
+  }
+  .contact_info_card {
+    background-color: #011936;
+    padding: 50px 110px;
+    margin-bottom: 35px;
+    li {
+      // margin: 15px 0;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    span {
+      color: #fff;
+      margin-left: 10px;
+    }
+  }
+
+  .contact_form {
+    h5 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 52px;
+    }
+    form {
+      background-color: #011936;
+      padding: 26px 55px;
+      .form-group {
+        margin-bottom: 25px;
+      }
+      .request_type {
+        border: 2px solid #00142c;
+        background-color: #00142c;
+        margin-bottom: 45px;
+        padding: 24px 13px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+      }
+      label {
+        cursor: pointer;
+        input {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          top: 0;
+          left: 0;
+        }
+        .circle {
+          width: 23px;
+          height: 23px;
+          border: 2px solid #fff;
+          display: inline-block;
+          border-radius: 50%;
+          flex: none;
+          margin-right: 15px;
+          transition: all 0.3s ease-in-out;
+        }
+        h6 {
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+      }
+      input[type="radio"]:checked ~ .request_type {
+        border-color: $secondColor;
+      }
+      input[type="radio"]:checked ~ .request_type .circle {
+        background-color: $secondColor;
+      }
+      .form-control {
+        background-color: #fff;
+        border-radius: 25px;
+        height: 50px;
+        padding-left: 40px;
+        &::placeholder {
+          color: #cfcfcf;
+        }
+      }
+      textarea.form-control {
+        height: 142px;
+      }
+    }
+  }
 }
 // =============================================================
+
+@media (max-width: 1300px) {
+  .custom_header .header_content .half_circles {
+    right: 0;
+  }
+  .why_choose_us_card h5 {
+    width: 100%;
+  }
+  .why_choose_us_card {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 13px;
+  }
+  .custom_header .header_content h5,
+  .custom_header .header_content span,
+  .home_contact_us h5 {
+    font-size: 3.5rem;
+  }
+  .custom_header .header_content .circle_1 img {
+    width: 60%;
+  }
+  .custom_header .header_content .half_circles img {
+    width: 200px;
+  }
+  .custom_header .header_content .typed {
+    // height: 100px;
+  }
+  .custom_btn {
+    padding: 10px;
+  }
+  .custom_header {
+    // padding-top: 100px;
+  }
+  .service_card {
+    padding-left: 25px;
+    .card_body p {
+      width: 260px;
+    }
+  }
+  .custom_header .header_content .typed {
+    height: 50px;
+  }
+  .custom_header .header_content .half_circles {
+    bottom: -250px;
+  }
+  .custom_footer .footer_links {
+    padding-left: 45px;
+  }
+  .fact_card .fact_body h5 {
+    font-size: 2.4rem;
+  }
+  .fact_card .fact_img {
+    width: 140px;
+    height: 140px;
+  }
+  .custom_about_header {
+    // min-height: 80vh;
+  }
+  .order-2-mobile{
+    order: 2;
+  }
+  .order-1-mobile{
+    order: 1;
+  }
+  .contact_us_page .contact_form form{
+    margin-bottom: 80px;
+  }
+
+}
+
 // =============================================================
+@media (max-width: 991px) {
+  .order-2-mobile{
+    order: 2;
+  }
+  .order-1-mobile{
+    order: 1;
+  }
+  .custom_navbar .links ul {
+    display: none !important;
+  }
+  .service_card {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  .service_card::after {
+    display: none;
+  }
+  .service_card .icon img {
+    width: 47%;
+  }
+  .nex_Gen .section_img {
+    margin-top: 40px;
+  }
+  .fact_card {
+    margin-bottom: 40px;
+  }
+  .why_choose_us_card {
+    min-height: 510px;
+  }
+  .customeer_testemonials .next_arrow {
+    position: absolute;
+    left: auto;
+    top: 25px;
+    transform: rotate(-90deg);
+    margin-bottom: 0;
+  }
+  .customeer_testemonials .prev_arrow {
+    position: absolute;
+    right: 0;
+    top: 25px !important;
+    transform: rotate(-90deg);
+    margin-top: 0;
+  }
+  .linked_to_vertical_slider {
+    margin-top: 40px;
+  }
+  .home_contact_us .contact_us_head {
+    width: 70%;
+  }
+  .custom_footer .footer_links {
+    // padding-left: 0;
+    margin-top: 50px;
+  }
+  .custom_footer {
+    .first_footer_links {
+      padding-left: 0;
+    }
+  }
+  .custom_about_header {
+    min-height: 80vh;
+    .header_content {
+      width: 100%;
+    }
+  }
+  .facts_number {
+    padding: 70px 0;
+  }
+  .pricing_card .pricing_body a.lets_talk{
+    font-size: 2.5rem;
+  }
+  .pricing_card .pricing_body{
+    padding: 28px 22px;
+  }
+    
+  .pricing_card .pricing_head h5{
+    font-size: 3rem;
+  }
+  .methodogy_card {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    .methodogy_card_img{
+      margin-bottom: 30px;
+    }
+  }
+}
 // =============================================================
-// =============================================================
+@media (max-width: 600px) {
+  .custom_header .header_content h5,
+  .custom_header .header_content span,
+  .home_contact_us h5 {
+    font-size: 2.5rem;
+  }
+  .custom_header .header_content .typed {
+    height: auto;
+  }
+  .custom_header .header_content .typed {
+    margin-left: 0;
+  }
+  .custom_header .header_content .first {
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+  .custom_header .header_content .half_circles .half_circles_2 {
+    margin-left: 10px;
+    margin-top: 100px;
+  }
+  .custom_header .header_content .half_circles img {
+    width: 140px;
+  }
+  .service_card .card_body p {
+    width: 100%;
+  }
+  .service_card {
+    text-align: center;
+    margin-bottom: 50px;
+    .card_header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h5 {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    a.custom_btn {
+      margin: auto;
+      display: block;
+    }
+  }
+  .our_services {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .custom_header .header_content a {
+    margin-bottom: 20px;
+  }
+  .custom_navbar .logo img {
+    width: 105px;
+  }
+  .nex_Gen {
+    padding-bottom: 100px;
+  }
+  .facts_number {
+    padding: 100px 0;
+  }
+  .fact_card {
+    h5 {
+      margin-top: 15px !important;
+    }
+    .fact_img {
+      img {
+        width: 70px;
+      }
+    }
+  }
+  .why_choose_us_team_certificate_wrapper {
+    padding: 100px 0;
+  }
+  .team_certificate .certificate_proffesional {
+    padding: 65px 35px;
+  }
+  .we_secure_slider .card_icon img {
+    width: 80%;
+  }
+  .customeer_testemonials .linked_to_vertical_slider .name img {
+    width: 70px;
+  }
+  .home_contact_us .contact_us_head {
+    width: 100%;
+  }
+  .custom_footer {
+    .footer_links_locations {
+      padding-left: 0;
+    }
+  }
+  .copy_right {
+    text-align: center;
+    .social {
+      margin-top: 15px;
+      ul {
+        justify-content: center !important;
+        li {
+          margin-left: 0;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .our_services .section_header {
+    text-align: center;
+  }
+  .customeer_testemonials .prev_arrow {
+    right: 10px;
+  }
+  .custom_about_header .header_img {
+    opacity: 0.4;
+  }
+  .contact_us_page .contact_form form{
+    padding: 26px 25px;
+  }
+  .contact_us_page .contact_form form .request_type{
+    margin-bottom: 30px;
+  }
+  .contact_us_page .contact_form h5{
+    font-size: 2.5rem;
+  }
+  .contact_us_page .contact_info_card{
+    padding: 40px 35px;
+  }
+  .section_header h5{
+    font-size: 2.5rem;
+  }
+  .methodogy_card .methodogy_card_cotnent{
+    padding: 85px 20px;
+  }
+}
 // =============================================================
 // =============================================================
 // =============================================================
