@@ -334,14 +334,15 @@ $(window).on("load", function () {
   // layeranimation.play();
   setTimeout(() => {
     // animateFromLeft();
-    $(".splach_loading").addClass("splashscreen_none");
+    $(".splach").addClass("splashscreen_none");
+    $("html").removeClass("splach_loadin");
   }, 2000);
   var currentDir = $("a").css("direction");
   console.log(currentDir);
   new Mmenu("#menu", {
     offCanvas: {
       slidingSubmenus: false,
-      position: currentDir == "rtl" ? "right-front" : "left-front",
+      position: currentDir == "rtl" ? "left-front" : "right-front",
     },
     theme: "light",
   });
