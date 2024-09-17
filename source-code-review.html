@@ -30,10 +30,32 @@
   <link rel="stylesheet" href="./assets/css/aos.css" />
   <!-- for english version please change style to ar style ./assets/css/style-ar.css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Home</title>
+  <title>Source Code Review</title>
 </head>
 
 <body>
+
+
+  <!-- mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li class="active"><a href="./index.html">Home</a></li>
+      <li><a href="./about-us.html">About us</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li>
+        <a href="./pricing.html">Pricing</a>
+        <ul>
+          <li><a href="">Penetration Testing</a></li>
+          <li><a href="">Application Security</a></li>
+          <li><a href="">Red Team Operations</a></li>
+          <li><a href="">Cybersecurity Training</a></li>
+          <li><a href="">Vulnerability Management</a></li>
+          <li><a href="">Compliance</a></li>
+        </ul>
+      </li>
+      <li><a href="./contact-us.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <div class="splach">
 
@@ -238,17 +260,32 @@
   <div class="custom_navbar">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-6 col-md-4 col-lg-3">
           <a href="./index.html" class="logo">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
         </div>
-        <div class="col-sm-12 col-md-8 col-lg-9">
+        <div class="col-6 col-md-8 col-lg-9">
+          <a href="#menu" class="menu_icon">
+            <img src="./assets/images/menu-icon.svg" alt="">
+          </a>
           <div class="links d-flex align-items-center justify-content-end">
             <ul class="list-unstyled d-flex align-items-center">
               <li class="active"><a href="">Home</a></li>
               <li><a href="">About us</a></li>
-              <li><a href="">Services</a></li>
+              <li class="submenu_parent">
+                <a href="">Services</a>
+                <div class="submenu">
+                  <ul class="list-unstyled">
+                    <li class="active"><a href="">Penetration Testing</a></li>
+                    <li><a href="">Application Security</a></li>
+                    <li><a href="">Red Team Operations</a></li>
+                    <li><a href="">Cybersecurity Training</a></li>
+                    <li><a href="">Vulnerability Management</a></li>
+                    <li><a href="">Compliance</a></li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="">Pricing</a></li>
               <li><a href="">Contact</a></li>
             </ul>
@@ -274,247 +311,162 @@
     </div>
   </div>
 
-  <div class="custom_header custom_about_header">
-    <div class="scroll_down">
-      <span class="point"></span>
-    </div>
-    <div class="header_img">
-      <img src="./assets/images/service-bg.png" alt="" />
-    </div>
+  <div class="service_details_breadcrumb">
     <div class="container">
-      <div class="header_content">
-        <h5>Penetration Testing</h5>
-        <p>
-          Penetration testing is crucial for identifying system vulnerabilities before attackers exploit them. SeKurd’s
-          service simulates real-world attacks from external, internal, and rogue users, using hacker tactics and APT
-          techniques. Tailored to your specific needs, our tests are quick and accurate, providing a realistic
-          assessment of your security. This ensures enhanced threat detection and improved defense strategies.
-        </p>
-        <a href="./contact-us.html" class="custom_btn">REQUEST A FREE PENTEST</a>
+      <h5 class="mb-0">Source Code Review</h5>
+      <p class="col-lg-8 mx-auto">
+        <!-- Web application vulnerabilities can lead to data breaches, financial losses, and damage to your reputation.
+        SeKurd offers in-depth assessments to uncover and address these risks, using industry standards like the OWASP
+        Top 10. Our experts identify critical flaws and strengthen your security. Trust SeKurd to protect your web
+        applications and keep your business safe from potential threats. -->
+      </p>
+    </div>
+  </div>
+
+  <div class="services_summery">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="serv_content">
+            <div class="section_header">
+              <h5>Service Summary</h5>
+            </div>
+            <!-- <p>
+              <strong>Internal Source Code Review</strong>
+            </p> -->
+            <p>
+              Sekurd uses a hybrid approach, both automated and manual code review techniques, to uncover code-related
+              security vulnerabilities that are generally hard to discover from the web application frontend. The
+              assessment is performed using a code-assisted penetration testing approach discovering issues related to
+              common web application areas
+            </p>
+            <!-- <p>
+              <strong>External Source Code Review  </strong>
+            </p> -->
+            <p>
+              Our source code review is designed to discover implementation-level vulnerabilities introduced during
+              coding and recommends remediation for those coding errors. We are well versed for the most commonly used
+              programming languages including Java, .NET, C / C++, C#, RoR, PHP, Perl, Python.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="serv_img">
+            <img src="./assets/images/serv-summery.svg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="our_services">
+  <div class="services_methodology">
     <div class="container">
       <div class="section_header">
         <h6>Our Services</h6>
-        <h5>Penetration Testing</h5>
+        <h5>Source Code Review Methodology</h5>
       </div>
-      <div class="services_cards">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service_card first_service_card">
-              <div class="card_header d-flex align-items-center">
-                <div class="icon">
-                  <img src="./assets/images/icon1.svg" alt="" />
-                </div>
-                <h5>Web Application penetration testing</h5>
-              </div>
-              <div class="card_body">
+      <div class="methodogy_cards">
+        <div class="methodogy_card">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 order-2-mobile">
+              <div class="methodogy_card_cotnent">
+                <h5>Peer Code Review</h5>
                 <p>
-                  Web application vulnerabilities are a significant source of security incidents, leading to data
-                  breaches, financial losses, and reputational harm. Many organizations face these risks due to
-                  insufficient security measures and development flaws. 
-                  SeKurd offers comprehensive assessments of your web applications. Our team of experts employs
-                  industry-leading methodologies, including the OWASP Top 10 and OWASP Web Security Testing Guide, to
-                  identify and mitigate critical security vulnerabilities. Trust SeKurd to fortify your web applications
-                  and safeguard your business against potential threats. 
+                  Adhere to international code review standards and in-house checklists. 
+                  Annotate code prior to review to ensure thorough assessment. 
                 </p>
-                <a href="./web-application-petnetration-tsting.html" class="custom_btn">Read more </a>
+              </div>
+            </div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-2"></div> -->
+            <div class="col-sm-12 col-md-12 col-lg-6 order-1-mobile">
+              <div class="methodogy_card_img">
+                <img src="./assets/images/security-secure-protection-28-svgrepo-com.svg" alt="" />
               </div>
             </div>
           </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service_card">
-              <div class="card_header d-flex align-items-center">
-                <div class="icon">
-                  <img src="./assets/images/icon2.svg" alt="" />
-                </div>
-                <h5>Mobile Application Penetration Testing</h5>
-              </div>
-              <div class="card_body">
-                <p>
-                  Mobile Application Penetration Testing is crucial for evaluating the security of mobile applications,
-                  identifying vulnerabilities, and ensuring robust protection against threats.
-
-                  SeKurd delivers a comprehensive Mobile App Security Assessment service designed to rigorously evaluate
-                  the security of your mobile applications and their underlying architecture. Our expert consultants
-                  develop proof-of-concept exploits to validate high-risk vulnerabilities, enabling your organization to
-                  effectively prioritize remediation efforts.
-
-                  Leveraging industry-leading frameworks such as the OWASP Mobile Top 10 and the OWASP Mobile Security
-                  Testing Guide (MSTG), we conduct meticulous assessments to ensure the highest level of security for
-                  your mobile applications. Partner with SeKurd to fortify your mobile apps against evolving threats and
-                  safeguard your business.
-                </p>
-                <a href="" class="custom_btn">Read more </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service_card no_border">
-              <div class="card_header d-flex align-items-center">
-                <div class="icon">
-                  <img src="./assets/images/icon3.svg" alt="" />
-                </div>
-                <h5>Network Penetration Testing  </h5>
-              </div>
-              <div class="card_body">
-                <p>
-                  SeKurd offers both Internal and External Network Penetration Testing to identify vulnerabilities and
-                  misconfigurations in your infrastructure. Internal testing simulates an 'unauthenticated internal'
-                  attacker, aiming to gain elevated access (like domain or enterprise administrator) by exploiting flaws
-                  and chaining attack vectors. External testing, conducted from an 'anonymous' user perspective via the
-                  Internet, follows industry standards with over 30,000 security test cases. By combining automated
-                  vulnerability scans with manual testing, we ensure thorough coverage and accuracy while working
-                  closely with you to minimize any disruption to your environment.
-                </p>
-                <a href="" class="custom_btn">Read more </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-12 col-lg-12 d-none d-lg-block">
-            <span class="line"></span>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service_card first_service_card">
-              <div class="card_header d-flex align-items-center">
-                <div class="icon">
-                  <img src="./assets/images/icon4.svg" alt="" />
-                </div>
-                <h5>Source Code Review</h5>
-              </div>
-              <div class="card_body">
-                <p>
-                  Sekurd uses a hybrid approach, both automated and manual code review techniques, to uncover
-                  code-related security vulnerabilities that are generally hard to discover from the web application
-                  frontend. The assessment is performed using a code-assisted penetration testing approach discovering
-                  issues related to common web application areas. Our source code review is designed to discover
-                  implementation-level vulnerabilities introduced during coding and recommends remediation for those
-                  coding errors. We are well versed for the most commonly used programming languages including Java,
-                  .NET, C / C++, C#, RoR, PHP, Perl, Python.
-                </p>
-                <a href="" class="custom_btn">Read more </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service_card">
-              <div class="card_header d-flex align-items-center">
-                <div class="icon">
-                  <img src="./assets/images/icon5.svg" alt="" />
-                </div>
-                <h5>Cloud Security</h5>
-              </div>
-              <div class="card_body">
-                <p>
-                  SeKurd excels in providing industry-standard penetration testing for a wide range of cloud service
-                  providers, including AWS, Azure, and Google Cloud. Our comprehensive testing methodology covers
-                  cloud-native components, applications, functions, serverless architectures, microservices, and APIs,
-                  addressing the entire attack surface. 
-                  As businesses increasingly migrate to the cloud for its cost savings, software and hardware
-                  independence, automation, flexibility, and high availability, they also face heightened risks to
-                  confidentiality, privacy, integrity, availability, and regulatory compliance. The threat landscape in
-                  the cloud is significantly broader than in traditional IT environments. SeKurd's expert cloud security
-                  assessment services are designed to mitigate these risks and help you maximize the benefits of the
-                  digital era while safeguarding your assets. 
-                  Don’t overlook the security of your cloud assets—ensure robust protection today 
-                </p>
-                <a href="" class="custom_btn">Read more </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service_card no_border">
-              <div class="card_header d-flex align-items-center">
-                <div class="icon">
-                  <img src="./assets/images/icon6.svg" alt="" />
-                </div>
-                <h5>Compliance</h5>
-              </div>
-              <div class="card_body">
-                <p>
-                  Compliance is the state of being in accordance with
-                  established guidelines or specifications, or the process of
-                  becoming so.
-                </p>
-                <a href="" class="custom_btn">Read more </a>
-              </div>
-            </div>
-          </div> -->
         </div>
+
+        <div class="methodogy_card">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 ">
+              <div class="methodogy_card_img">
+                <img src="./assets/images/security-secure-protection-28-svgrepo-com.svg" alt="" />
+              </div>
+            </div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-2"></div> -->
+            <div class="col-sm-12 col-md-12 col-lg-6 ">
+              <div class="methodogy_card_cotnent">
+                <h5>Automated Analysis</h5>
+                <p>
+                  Utilize code review tools for detailed analysis. 
+                  Check for false positives and validate identified vulnerabilities. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="methodogy_card">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 order-2-mobile">
+              <div class="methodogy_card_cotnent">
+                <h5>Recommendations</h5>
+                <p>
+                  Identify vulnerabilities and provide recommendations based on industry standards. 
+                </p>
+              </div>
+            </div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-2"></div> -->
+            <div class="col-sm-12 col-md-12 col-lg-6 order-1-mobile">
+              <div class="methodogy_card_img">
+                <img src="./assets/images/security-secure-protection-28-svgrepo-com.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="methodogy_card">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 ">
+              <div class="methodogy_card_img">
+                <img src="./assets/images/security-secure-protection-28-svgrepo-com.svg" alt="" />
+              </div>
+            </div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-2"></div> -->
+            <div class="col-sm-12 col-md-12 col-lg-6 ">
+              <div class="methodogy_card_cotnent">
+                <h5>Reporting</h5>
+                <p>
+                  Deliver a comprehensive vulnerability assessment report and an executive summary. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="methodogy_card">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-12 col-lg-6 order-2-mobile">
+              <div class="methodogy_card_cotnent">
+                <h5>Retesting</h5>
+                <p>
+                  Perform retesting after applying patches to verify fixes. 
+                  Detect any unresolved or new vulnerabilities introduced by recent changes. 
+                </p>
+              </div>
+            </div>
+            <!-- <div class="col-sm-12 col-md-6 col-lg-2"></div> -->
+            <div class="col-sm-12 col-md-12 col-lg-6 order-1-mobile">
+              <div class="methodogy_card_img">
+                <img src="./assets/images/security-secure-protection-28-svgrepo-com.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
-    </div>
-  </div>
-
-  <div class="facts_number custom_facts_header">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="fact_card">
-            <div class="fact_img">
-              <img src="./assets/images/fact1.svg" alt="" />
-            </div>
-            <div class="fact_body">
-              <h5>+3,452</h5>
-              <p>Cybersecurity Projects</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="fact_card">
-            <div class="fact_img">
-              <img src="./assets/images/fact2.svg" alt="" />
-            </div>
-            <div class="fact_body">
-              <h5>+1,458</h5>
-              <p>Clients Protection</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="fact_card">
-            <div class="fact_img">
-              <img src="./assets/images/fact3.svg" alt="" />
-            </div>
-            <div class="fact_body">
-              <h5>100%</h5>
-              <p>Service Guarantee</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3">
-          <div class="fact_card">
-            <div class="fact_img">
-              <img src="./assets/images/fact4.svg" alt="" />
-            </div>
-            <div class="fact_body">
-              <h5>+85</h5>
-              <p>Team Experts</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="news_letter">
-    <div class="container">
-      <div class="section_header">
-        <h5>Subscribe Our Newsletter</h5>
-      </div>
-      <p>Join us at Sekurd, and together, let’s build a secure foundation for your organization’s digital journey.</p>
-      <form action="" class="col-lg-7 mx-auto">
-        <input type="text" name="" id="" class="form-control">
-        <button type="submit" class="custom_btn d-block mx-auto mt-4">Subscribe</button>
-      </form>
     </div>
   </div>
 

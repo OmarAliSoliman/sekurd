@@ -173,7 +173,8 @@ body.modal-open .mm-slideout {
   align-items: center;
   justify-content: center;
   background-color: #00142c;
-  z-index: 999;
+  z-index: 999999;
+  top: 0;
   transition: all 0.3s ease-in-out;
   /* Dark theme */
   /* Animations */
@@ -647,6 +648,9 @@ body.modal-open .mm-slideout {
   margin: unset !important;
   margin-right: auto !important;
 }
+.custom_about_header .header_content h5 {
+  font-size: 4rem;
+}
 .custom_about_header .header_content p {
   width: 100%;
 }
@@ -713,10 +717,10 @@ body.modal-open .mm-slideout {
 }
 .service_card h5 {
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin: 0;
-  margin-left: 30px;
-  width: 50%;
+  margin-left: 15px;
+  width: 60%;
 }
 .service_card .card_body p {
   color: #fff;
