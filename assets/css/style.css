@@ -436,6 +436,51 @@ body.modal-open .mm-slideout {
   color: #0ec9ac;
   font-weight: 600;
 }
+.custom_navbar .links .submenu_parent {
+  position: relative;
+}
+.custom_navbar .links .submenu_parent .submenu {
+  position: absolute;
+  top: 30px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 23px 0;
+  background-color: #011936;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.custom_navbar .links .submenu_parent .submenu li, .custom_navbar .links .submenu_parent .submenu a {
+  margin: 0 !important;
+}
+.custom_navbar .links .submenu_parent .submenu li {
+  margin: 5px 0 !important;
+  position: relative;
+  padding: 0 35px;
+}
+.custom_navbar .links .submenu_parent .submenu li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 14px;
+  background-color: #0ec9ac;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease-in-out;
+}
+.custom_navbar .links .submenu_parent .submenu li.active::after {
+  width: 21px;
+}
+.custom_navbar .links .submenu_parent .submenu li:hover::after {
+  width: 21px;
+}
+.custom_navbar .links .submenu_parent:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 .custom_navbar .links .social {
   margin-left: 40px;
 }
