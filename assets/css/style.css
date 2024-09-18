@@ -454,6 +454,9 @@ body.modal-open .mm-slideout {
 }
 .custom_navbar .links .submenu_parent .submenu li, .custom_navbar .links .submenu_parent .submenu a {
   margin: 0 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
 }
 .custom_navbar .links .submenu_parent .submenu li {
   margin: 5px 0 !important;
@@ -473,6 +476,10 @@ body.modal-open .mm-slideout {
 }
 .custom_navbar .links .submenu_parent .submenu li.active::after {
   width: 21px;
+}
+.custom_navbar .links .submenu_parent .submenu li.active a {
+  color: #0ec9ac !important;
+  font-weight: bold;
 }
 .custom_navbar .links .submenu_parent .submenu li:hover::after {
   width: 21px;
@@ -653,6 +660,7 @@ body.modal-open .mm-slideout {
 }
 .custom_about_header .header_content p {
   width: 100%;
+  font-size: 1.1rem;
 }
 
 .custom_contact_header {
@@ -793,7 +801,7 @@ body.modal-open .mm-slideout {
 .fact_card .fact_body {
   text-align: center;
 }
-.fact_card .fact_body h5 {
+.fact_card .fact_body h5, .fact_card .fact_body span {
   color: #fff;
   font-size: 4rem;
   font-weight: bold;
@@ -830,7 +838,7 @@ body.modal-open .mm-slideout {
   background-color: #011936;
   padding: 65px 35px;
   text-align: center;
-  min-height: 465px;
+  min-height: 540px;
   position: relative;
   z-index: 3;
   margin-bottom: 15px;

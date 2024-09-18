@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css"
     integrity="sha512-nNatP1G6CEh43irXY/GN4cDcLRX/R0jAYAV/ulFZcotSXcuIQE5Do4TuDOYNAD2SCIpmIbaYSllyjTysSCkpEw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+
   <!-- for animation -->
   <link rel="stylesheet" href="./assets/css/aos.css" />
   <!-- for english version please change style to ar style ./assets/css/style-ar.css -->
@@ -238,12 +240,12 @@
       <li>
         <a href="./pricing.html">Pricing</a>
         <ul>
-          <li><a href="">Penetration Testing</a></li>
+          <li><a href="./penetration-testing.html">Penetration Testing</a></li>
           <li><a href="">Application Security</a></li>
-          <li><a href="">Red Team Operations</a></li>
-          <li><a href="">Cybersecurity Training</a></li>
-          <li><a href="">Vulnerability Management</a></li>
-          <li><a href="">Compliance</a></li>
+          <li><a href="./red-teaming-services.html">Red Team Operations</a></li>
+          <li><a href="./cloud-security.html">Cybersecurity Training</a></li>
+          <li><a href="./vulnerability-management-services.html">Vulnerability Management</a></li>
+          <li><a href="./compliance-consulting.html">Compliance</a></li>
         </ul>
       </li>
       <li><a href="./contact-us.html">Contact</a></li>
@@ -266,7 +268,19 @@
             <ul class="list-unstyled d-flex align-items-center">
               <li class="active"><a href="./index.html">Home</a></li>
               <li><a href="./about-us.html">About us</a></li>
-              <li><a href="./services.html">Services</a></li>
+              <li class="submenu_parent">
+                <a href="">Services</a>
+                <div class="submenu">
+                  <ul class="list-unstyled">
+                    <li><a href="./penetration-testing.html">Penetration Testing</a></li>
+                    <li><a href="">Application Security</a></li>
+                    <li><a href="./red-teaming-services.html">Red Team Operations</a></li>
+                    <li><a href="./security-training.html">Cybersecurity Training</a></li>
+                    <li><a href="./vulnerability-management-services.html">Vulnerability Management</a></li>
+                    <li><a href="./compliance-consulting.html">Compliance</a></li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="./pricing.html">Pricing</a></li>
               <li><a href="./contact-us.html">Contact</a></li>
             </ul>
@@ -342,10 +356,16 @@
               </div>
               <div class="card_body">
                 <p>
-                  a security exercise where a cyber-security expert attempts
-                  to find and exploit vulnerabilities in a computer system.
+                  Penetration testing is fundamental to any robust cybersecurity strategy, aiming to identify
+                  vulnerabilities in systems and networks before they can be exploited by malicious actors. SeKurd
+                  Penetration Testing service enhances threat visibility by simulating attacks from external, internal,
+                  and rogue user perspectives. Utilizing the same Tactics, Techniques, and Procedures (TTPs) as
+                  real-world adversaries and Advanced Persistent Threat (APT) actors, our penetration tests offer a
+                  precise and efficient approach to adversary simulation. These tests are customized to specific
+                  scenarios and executed within a shorter timeframe, delivering a comprehensive and realistic assessment
+                  of your security posture. 
                 </p>
-                <a href="" class="custom_btn">Read more </a>
+                <a href="./penetration-testing.html" class="custom_btn">Read more </a>
               </div>
             </div>
           </div>
@@ -360,8 +380,11 @@
               </div>
               <div class="card_body">
                 <p>
-                  Secure Software Development (SDLC), Threat Modelling and
-                  Source Code Review.
+                  At SeKurd, our Application Security services are designed to protect your organization’s software from
+                  evolving threats and vulnerabilities. With the increasing complexity of applications and the growing
+                  sophistication of cyberattacks, securing your applications is more critical than ever. Our
+                  comprehensive approach ensures that your applications remain secure throughout their lifecycle, from
+                  development to deployment and beyond. 
                 </p>
                 <a href="" class="custom_btn">Read more </a>
               </div>
@@ -378,11 +401,15 @@
               </div>
               <div class="card_body">
                 <p>
-                  Red teaming occurs when ethical hackers are authorized by
-                  your organization to emulate real attackers' tactics,
-                  techniques
+                  At Sekurd, our Red Team operations extend beyond standard penetration testing by conducting
+                  comprehensive simulations of real-world attacks across your entire organization. This approach allows
+                  you to evaluate your team's and security systems' effectiveness in responding to actual threats. Our
+                  red-teaming scope encompasses networks, web applications, routers, security appliances, and even
+                  employees. Unlike conventional penetration testing, our Red Team employs a range of tactics, including
+                  social engineering, network penetration, and web application testing, to thoroughly assess your
+                  organization's security posture.
                 </p>
-                <a href="" class="custom_btn">Read more </a>
+                <a href="./red-teaming-services.html" class="custom_btn">Read more </a>
               </div>
             </div>
           </div>
@@ -401,11 +428,13 @@
               </div>
               <div class="card_body">
                 <p>
-                  help you deepen your understanding of security and data
-                  protection methods, resources and processes for using
-                  computers
+                  At SeKurd, we offer comprehensive security training programs designed to empower your team with the
+                  knowledge and skills needed to effectively manage and mitigate cybersecurity risks. Our training
+                  services are tailored to address the unique needs of your organization, ensuring that all
+                  employees—from technical staff to executives—understand and can implement best practices for
+                  safeguarding your information assets. 
                 </p>
-                <a href="" class="custom_btn">Read more </a>
+                <a href="./security-training.html" class="custom_btn">Read more </a>
               </div>
             </div>
           </div>
@@ -420,10 +449,12 @@
               </div>
               <div class="card_body">
                 <p>
-                  a continuous, proactive, and often automated process that
-                  keeps your computer systems, networks, and enterprise
+                  At SeKurd, we provide comprehensive Vulnerability Management services designed to protect your
+                  organization from emerging threats and potential security risks. Our approach goes beyond just
+                  identifying vulnerabilities; we offer a continuous process that includes detection, assessment,
+                  prioritization, and remediation, ensuring that your security posture remains strong and resilient. 
                 </p>
-                <a href="" class="custom_btn">Read more </a>
+                <a href="./vulnerability-management-services.html" class="custom_btn">Read more </a>
               </div>
             </div>
           </div>
@@ -438,11 +469,12 @@
               </div>
               <div class="card_body">
                 <p>
-                  Compliance is the state of being in accordance with
-                  established guidelines or specifications, or the process of
-                  becoming so.
+                  SeKurd’s regulatory compliance services are designed to help clients identify vulnerabilities, assess
+                  risk impact, and implement effective remediation measures. We ensure that technology, processes, and
+                  personnel within your organization meet industry-specific or national standards such as PCI-DSS, ISO
+                  27001, GDPR, PDPA, and HIPAA. 
                 </p>
-                <a href="" class="custom_btn">Read more </a>
+                <a href="./compliance-consulting.html" class="custom_btn">Read more </a>
               </div>
             </div>
           </div>
@@ -464,7 +496,7 @@
               penetration testing approach that delivers unmatched
               intelligence and continuous security testing.
             </p>
-            <a href="" class="custom_btn">REQUEST A FREE PENTEST</a>
+            <a href="./contact-us.html" class="custom_btn">REQUEST A FREE PENTEST</a>
           </div>
         </div>
         <!-- <div class="col-sm-12 col-md-6 col-lg-1"></div> -->
@@ -508,7 +540,9 @@
               <img src="./assets/images/fact3.svg" alt="" />
             </div>
             <div class="fact_body">
-              <h5>100%</h5>
+              <div class="d-flex align-items-center justify-content-center">
+                <h5>100</h5><span>%</span>
+              </div>
               <p>Service Guarantee</p>
             </div>
           </div>
@@ -519,7 +553,10 @@
               <img src="./assets/images/fact4.svg" alt="" />
             </div>
             <div class="fact_body">
-              <h5>+85</h5>
+              <div class="d-flex align-items-center justify-content-center">
+                <span>+</span>
+                <h5>85</h5>
+              </div>
               <p>Team Experts</p>
             </div>
           </div>
@@ -892,8 +929,8 @@
           needs.
         </p>
         <div class="btn_options d-flex align-items-center justify-content-center mt-5">
-          <a href="" class="custom_btn">Contact Us</a>
-          <a href="" class="custom_btn">Schedule a Call</a>
+          <a href="./contact-us.html" class="custom_btn">Contact Us</a>
+          <a href="./contact-us.html" class="custom_btn">Schedule a Call</a>
         </div>
       </div>
     </div>

@@ -326,6 +326,34 @@ $(document).ready(function () {
     });
   }
 
+  if ($("#scene").length) {
+    var scene = document.getElementById("scene");
+    var parallaxInstance = new Parallax(scene);
+  }
+
+  if ($(".fact_body").length) {
+    const counterUp = window.counterUp.default;
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+          counterUp(el, {
+            duration: 2000,
+            delay: 16,
+          });
+          el.classList.add("is-visible");
+        }
+      });
+    };
+
+    const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+    // Select all h5 elements inside .fact_body and observe each
+    const elements = document.querySelectorAll(".fact_body h5");
+    elements.forEach((el) => IO.observe(el));
+  }
+
   AOS.init();
 });
 
