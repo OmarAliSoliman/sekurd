@@ -315,7 +315,7 @@ $(document).ready(function () {
 
   if ($(".typed_element").length) {
     var typed = new Typed(".typed_element", {
-      strings: ["Protection", "Scurity", "Offensive", "Implementation"],
+      strings: ["Protection", "Security", "Team"],
       typeSpeed: 100,
       smartBackspace: true,
       backSpeed: 80,

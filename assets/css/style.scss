@@ -557,6 +557,7 @@ body.modal-open .mm-slideout {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
   .lines {
     position: absolute;
     bottom: 140px;
@@ -704,6 +705,10 @@ body.modal-open .mm-slideout {
   min-height: 90vh;
 }
 
+.custom_height_header{
+  min-height: 80vh !important;
+}
+
 .section_header {
   h6 {
     font-size: 1rem;
@@ -723,6 +728,7 @@ body.modal-open .mm-slideout {
 .our_services {
   background-color: #011936;
   padding: 260px 0 160px 0;
+  padding: 90px 0 90px 0;
   .section_header {
     margin-bottom: 80px;
   }
@@ -1148,6 +1154,7 @@ body.modal-open .mm-slideout {
     }
     img {
       margin-bottom: 45px;
+      width: 150px;
     }
     p {
       color: #fff;
@@ -1217,8 +1224,9 @@ body.modal-open .mm-slideout {
       margin-bottom: 15px;
       a {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 5px;
+        font-size: .9rem;
         span {
           margin-left: 10px;
         }
@@ -1326,7 +1334,7 @@ body.modal-open .mm-slideout {
 }
 
 .service_details_breadcrumb {
-  height: 60vh;
+  height: 50vh;
   background-color: $mainColor;
   display: flex;
   align-items: center;
@@ -1371,15 +1379,23 @@ body.modal-open .mm-slideout {
   margin-bottom: 37px;
   .methodogy_card_cotnent {
     background-color: #011936;
-    padding: 87px 64px;
+    padding: 37px 54px;
+    margin-bottom: 30px;
+    min-height: 450px;
+    .card_icon{
+      margin-bottom: 40px;
+    }
+    img{
+      width: 150px;
+    }
     h5 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       color: #fff;
     }
     p {
       color: #fff;
       margin-top: 15px;
-      font-size: 1rem;
+      font-size: .9rem;
       line-height: 25px;
     }
   }
