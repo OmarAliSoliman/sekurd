@@ -1174,6 +1174,19 @@ body.modal-open .mm-slideout {
   background-color: transparent;
 }
 
+.comming_soon {
+  height: 100vh;
+  background-color: #00142c;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.comming_soon h5 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
 .acwnologe_by {
   background-color: #011936;
   padding: 83px 0;
