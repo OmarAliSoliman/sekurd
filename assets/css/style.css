@@ -762,6 +762,10 @@ body.modal-open .mm-slideout {
   padding-left: 0;
 }
 
+.our_services_penteration .service_card .icon img {
+  width: 65%;
+}
+
 .nex_Gen {
   background-color: #00142c;
   padding: 188px 0;
@@ -1338,6 +1342,10 @@ body.modal-open .mm-slideout {
 .methodogy_card .methodogy_card_img img {
   width: 50%;
   margin: auto;
+}
+
+.application_services_methodology .methodogy_card_cotnent {
+  min-height: 550px !important;
 }
 
 .pricing_cards {

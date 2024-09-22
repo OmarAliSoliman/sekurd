@@ -806,6 +806,16 @@ body.modal-open .mm-slideout {
   }
 }
 
+.our_services_penteration{
+  .service_card{
+    .icon{
+      img{
+        width: 65%;
+      }
+    }
+  }
+}
+
 .nex_Gen {
   background-color: $mainColor;
   padding: 188px 0;
@@ -1437,6 +1447,12 @@ body.modal-open .mm-slideout {
       width: 50%;
       margin: auto;
     }
+  }
+}
+
+.application_services_methodology{
+  .methodogy_card_cotnent{
+    min-height: 550px !important;
   }
 }
 
