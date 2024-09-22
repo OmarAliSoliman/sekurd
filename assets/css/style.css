@@ -456,7 +456,7 @@ body.modal-open .mm-slideout {
   margin: 0 !important;
   color: #fff !important;
   font-weight: 400 !important;
-  font-size: 0.9rem !important;
+  font-size: 1rem !important;
 }
 .custom_navbar .links .submenu_parent .submenu li {
   margin: 5px 0 !important;
@@ -526,7 +526,6 @@ body.modal-open .mm-slideout {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 .custom_header .lines {
   position: absolute;
@@ -670,6 +669,7 @@ body.modal-open .mm-slideout {
 
 .custom_height_header {
   min-height: 80vh !important;
+  overflow: hidden;
 }
 
 .section_header h6 {
@@ -1296,6 +1296,16 @@ body.modal-open .mm-slideout {
   text-align: center;
   margin-bottom: 95px;
 }
+.services_methodology .section_header p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.services_methodology .methodogy_cards .head {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
 .methodogy_card {
   margin-bottom: 37px;
@@ -1319,7 +1329,7 @@ body.modal-open .mm-slideout {
 .methodogy_card .methodogy_card_cotnent p {
   color: #fff;
   margin-top: 15px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 25px;
 }
 .methodogy_card .methodogy_card_img {
