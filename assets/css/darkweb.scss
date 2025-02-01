@@ -680,8 +680,8 @@ body.modal-open .mm-slideout {
     font-size: 2rem;
   }
   h5{
-    font-size: 4rem;
-    line-height: 80px;
+    font-size: 4.5rem;
+    line-height: 70px;
     font-weight: 600;
     span{
       color: $secondColor;
@@ -1373,6 +1373,18 @@ body.modal-open .mm-slideout {
   }
   .why_choose_sekurd{
     padding-bottom: 0;
+  }
+  .why_choose_sekurd .why_choose_sekurd_img.card_img .img_parent{
+    display: none;
+  }
+  .why_choose_sekurd h5{
+    font-size: 2.5rem;
+  }
+  .why_choose_sekurd{
+    min-height: 60vh;
+  }
+  .why_choose_sekurd .header_img_on_mobile, .why_choose_sekurd .fortify_svg{
+    opacity: .3;
   }
 }
 
