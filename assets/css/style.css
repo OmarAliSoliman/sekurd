@@ -1116,7 +1116,7 @@ body.modal-open .mm-slideout {
   border: 0;
 }
 .custom_footer .footer_links {
-  padding-left: 80px;
+  padding-left: 50px;
   position: relative;
 }
 .custom_footer .footer_links::after {
