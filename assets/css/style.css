@@ -1063,6 +1063,35 @@ body.modal-open .mm-slideout {
   margin: 0 15px;
 }
 
+.custom_terms_header {
+  min-height: 40vh !important;
+  align-items: flex-end !important;
+}
+.custom_terms_header .header_content {
+  margin-left: unset !important;
+  margin-right: auto !important;
+}
+.custom_terms_header .header_content h5 {
+  font-size: 4rem;
+}
+
+.terms_conditions {
+  background-color: #00142c;
+  padding-bottom: 150px;
+}
+.terms_conditions p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+.terms_conditions p span {
+  display: block;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
 .custom_footer {
   background-color: #00142c;
   padding: 120px 0 44px 0;
@@ -1160,6 +1189,13 @@ body.modal-open .mm-slideout {
 .copy_right {
   background-color: #00142c;
   padding: 40px 0;
+}
+.copy_right .terms_condiiton_footer {
+  text-align: center;
+  justify-content: center;
+}
+.copy_right .terms_condiiton_footer a {
+  margin: 0 10px;
 }
 .copy_right h5 {
   color: #fff;

@@ -1143,6 +1143,34 @@ body.modal-open .mm-slideout {
     }
   }
 }
+.custom_terms_header{
+  min-height: 40vh !important;
+  align-items: flex-end !important;
+  .header_content{
+    margin-left: unset !important;
+    margin-right: auto !important;
+    h5{
+      font-size: 4rem;
+    }
+  }
+}
+
+.terms_conditions{
+  background-color: $mainColor;
+  padding-bottom: 150px;
+  p{
+    color: #fff;
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 35px;
+    span{
+      display: block;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  }
+}
 
 // =============================================================
 .custom_footer {
@@ -1249,6 +1277,13 @@ body.modal-open .mm-slideout {
 .copy_right {
   background-color: $mainColor;
   padding: 40px 0;
+  .terms_condiiton_footer{
+    text-align: center;
+    justify-content: center;
+    a{
+      margin: 0 10px;
+    }
+  }
   h5 {
     color: #fff;
     font-size: 1rem;
