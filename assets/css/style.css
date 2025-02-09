@@ -457,6 +457,13 @@ body.modal-open .mm-slideout {
   color: #fff !important;
   font-weight: 400 !important;
   font-size: 1rem !important;
+  cursor: pointer;
+}
+.custom_navbar .links .submenu_parent .submenu li:hover, .custom_navbar .links .submenu_parent .submenu a:hover {
+  color: #0ec9ac !important;
+}
+.custom_navbar .links .submenu_parent .submenu li:hover::after, .custom_navbar .links .submenu_parent .submenu a:hover::after {
+  width: 21px;
 }
 .custom_navbar .links .submenu_parent .submenu li {
   margin: 5px 0 !important;
@@ -1269,6 +1276,10 @@ body.modal-open .mm-slideout {
 }
 .acwnologe_by .slick-dots li.slick-active button {
   background-color: #0ec9ac;
+}
+
+.scheduleButton {
+  cursor: pointer;
 }
 
 .our_partners {

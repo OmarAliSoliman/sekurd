@@ -418,7 +418,7 @@ $(document).ready(function () {
       spaceBetween: 1, // Spacing between slides
       centeredSlides: false, // Center the active slide
       grabCursor: false,
-      effect: 'cards',
+      effect: "cards",
       initialSlide: 2,
       allowTouchMove: false,
       lazy: true,
@@ -453,8 +453,28 @@ $(document).ready(function () {
     $($(".dotactivevideo").get(0)).find("video")[0].play();
   }
 
+  if($(".scheduleButton").length){
+    document.querySelectorAll('.scheduleButton').forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        Calendly.initPopupWidget({ url: 'https://calendly.com/sekurd/' });
+        return false;
+      });
+    });
+  }
+
   AOS.init();
 });
+
+window.onload = function () {
+  Calendly.initBadgeWidget({
+    url: "https://calendly.com/sekurd",
+    text: "Schedule Meeting",
+    color: "#0069ff",
+    textColor: "#ffffff",
+    branding: false,
+  });
+};
 
 $(window).on("load", function () {
   var currentDir = $("body").css("direction");

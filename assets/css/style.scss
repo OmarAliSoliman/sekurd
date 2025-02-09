@@ -478,6 +478,13 @@ body.modal-open .mm-slideout {
           color: #fff !important;
           font-weight: 400 !important;
           font-size: 1rem !important;
+          cursor: pointer;
+          &:hover{
+            color: $secondColor !important;
+            &::after{
+              width: 21px;
+            }
+          }
         }
         li{
           margin: 5px 0 !important;
@@ -1371,6 +1378,10 @@ body.modal-open .mm-slideout {
       background-color: $secondColor;
     }
   }
+}
+
+.scheduleButton{
+  cursor: pointer;
 }
 
 .our_partners {
