@@ -462,6 +462,7 @@ $(document).ready(function () {
       });
     });
   }
+  
 
   AOS.init();
 });
@@ -469,7 +470,7 @@ $(document).ready(function () {
 window.onload = function () {
   Calendly.initBadgeWidget({
     url: "https://calendly.com/sekurd",
-    text: "Schedule Meeting",
+    text: "Talk to us",
     color: "#0069ff",
     textColor: "#ffffff",
     branding: false,
